@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoreShose</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!--jQuery-->
+    <script src="./main.js" defer></script>
+    <script src="./banner.js" defer></script>
+    <!--js-->
+    <link rel="icon" href="./logo/logo2.png">
+    <!--favicon-->
+    <link rel="stylesheet" href="./main.css">
+    <!--css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font awesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <!--google font-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--swiper-->
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header_content">
+            <div class="logo"><a href="./index.html"><img src="./logo/logo.png" alt="로고"></a></div>
+            <div class="search"><input class="search_box" type="search" placeholder="브랜드를 검색해 보세요!">
+                <button class="search_but"><i class="fa-solid fa-magnifying-glass popularity_con1"></i></button>
+                <div class="popularity">
+                    <h3 class="popularity_con1">인기 검색어</h3>
+                    <p class="popularity_txt popularity_con1" style="color: black;"><span style="color: red;">01
+                        </span>나이키<i class="popularity_con2 fa-solid fa-caret-up" style="color: red;"></i></p>
+                    <p class="popularity_txt popularity_con1">02 아디다스<i
+                            class="popularity_con2 fa-solid fa-caret-up"></i></p>
+                    <p class="popularity_txt popularity_con1">03 뉴발란스<i
+                            class="popularity_con2 fa-solid fa-caret-up"></i></p>
+                    <p class="popularity_txt popularity_con1">04 크록스<i class="popularity_con2 fa-solid fa-caret-up"></i>
+                    </p>
+                    <p class="popularity_txt popularity_con1">05 휠라<i class="popularity_con2 fa-solid fa-caret-up"></i>
+                    </p>
+                </div>
+            </div>
+
+            <nav class="header_nav_top">
+                <ul>
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./join.html">회원가입</a></li>
+                    <li><a href="#!">마이페이지</a></li>
+                    <li><a href="#!">장바구니</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="header_nav_bottom">
+            <ul class="header_nav_bottom_brand">
+                <li class="brand"><a href="#!">브랜드</a>
+                    <ul>
+                        <li><a href="#!" class="brand_color">A</a></li>
+                        <li><a href="#!">아디다스</a></li>
+                        <li><a href="#!">아키클래식</a></li>
+                        <li><a href="#!">앨빈클로</a></li>
+                        <li><a href="#!">아날로그무드</a></li>
+                        <li><a href="#!">아르에르</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!" class="brand_color">B</a></li>
+                        <li><a href="#!">베이비잼</a></li>
+                        <li><a href="#!">바켄</a></li>
+                        <li><a href="#!">밸롭</a></li>
+                        <li><a href="#!">벤시몽</a></li>
+                        <li><a href="#!">봉봉프렌즈</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!" class="brand_color">C</a></li>
+                        <li><a href="#!">캘빈클라인진</a></li>
+                        <li><a href="#!">카고브로스</a></li>
+                        <li><a href="#!">캐스키드슨</a></li>
+                        <li><a href="#!">클레용</a></li>
+                        <li><a href="#!">크럼프</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!" class="brand_color">D</a></li>
+                        <li><a href="#!">드라반</a></li>
+                        <li><a href="#!">대너</a></li>
+                        <li><a href="#!">다이노솔즈</a></li>
+                        <li><a href="#!">닥터마틴</a></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!" class="brand_color">E</a></li>
+                        <li><a href="#!">어프어프</a></li>
+                        <li><a href="#!">펠로우</a></li>
+                        <li><a href="#!">아이더 세이프티</a></li>
+                        <li><a href="#!">엘두</a></li>
+                        <li><a href="#!">이머전시</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!" class="brand_color">F</a></li>
+                        <li><a href="#!">페이유에</a></li>
+                        <li><a href="#!">휠라</a></li>
+                        <li><a href="#!">파인드칠린</a></li>
+                        <li><a href="#!">프레드 페리</a></li>
+                        <li><a href="#!">포머티브</a></li>
+                    </ul>
+                </li>
+                <li class="header_nav_bottom_oder"><a href="#!" style="color: red;">스니커즈</a>
+                    <ul>
+                        <li><a href="./product_page.html" style="color: red;">스니커즈</a></li>
+                        <li><a href="#!">캔버스화</a></li>
+                        <li><a href="#!">슬립온</a></li>
+                        <li><a href="#!">뮬</a></li>
+                        <li><a href="#!">기타</a></li>
+                        <li><a href="#!">워크화</a></li>
+                    </ul>
+                </li>
+                <li class="header_nav_bottom_oder"><a href="#!">운동화</a>
+                    <ul>
+                        <li><a href="#!">운동화</a></li>
+                        <li><a href="#!">런닝화</a></li>
+                        <li><a href="#!">농구화</a></li>
+                        <li><a href="#!">등산화</a></li>
+                        <li><a href="#!">축구화</a></li>
+                        <li><a href="#!">배트민턴화</a></li>
+                        <li><a href="#!">테니스화</a></li>
+                        <li><a href="#!">워킹화</a></li>
+                    </ul>
+                </li>
+                <li class="header_nav_bottom_oder"><a href="#!">구두</a>
+                    <ul>
+                        <li><a href="#!">구두</a></li>
+                        <li><a href="#!">로퍼</a></li>
+                        <li><a href="#!">레이스업</a></li>
+                        <li><a href="#!">힐/펌프스</a></li>
+                        <li><a href="#!">뮬/블로퍼</a></li>
+                        <li><a href="#!">플랫</a></li>
+                    </ul>
+                </li>
+                <li class="header_nav_bottom_oder"><a href="#!">부츠</a>
+                    <ul>
+                        <li><a href="#!">부츠</a></li>
+                        <li><a href="#!">워크부츠</a></li>
+                        <li><a href="#!">털부츠</a></li>
+                        <li><a href="#!">패딩부츠</a></li>
+                        <li><a href="#!">앵클부츠</a></li>
+                        <li><a href="#!">미들부츠</a></li>
+                    </ul>
+                </li>
+                <li class="header_nav_bottom_oder"><a href="#!">샌들/슬리퍼</a>
+                    <ul>
+                        <li><a href="#!">샌들/슬리퍼</a></li>
+                        <li><a href="#!">슬라이드</a></li>
+                        <li><a href="#!">아쿠아슈즈</a></li>
+                        <li><a href="#!">스포츠샌들</a></li>
+                        <li><a href="#!">코르크샌들</a></li>
+                        <li><a href="#!">플립플랍</a></li>
+                        <li><a href="#!">레더샌들</a></li>
+                        <li><a href="#!">캐주얼샌들</a></li>
+                        <li><a href="#!">윈터샌들</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <input type="radio" name="v_ban" id="ban1" checked>
+    <input type="radio" name="v_ban" id="ban2">
+    <input type="radio" name="v_ban" id="ban3">
+    <input type="radio" name="v_ban" id="ban4"> -->
+
+    <!-- <div class="banner">
+        <ul class="visual_banner">
+            <li>
+                <div><img src="./banner/banner1.jpg" alt="비주얼배너1"></div>
+                <label class="banner_left_but" for="ban4"><i class="fa-solid fa-chevron-left"></i></label>
+                <label class="banner_right_but" for="ban2"><i class="fa-solid fa-chevron-right"></i></label>
+            </li>
+            <li>
+                <div><img src="./banner/banner2.jpg" alt="비주얼배너2"></div>
+                <label class="banner_left_but" for="ban1"><i class="fa-solid fa-chevron-left"></i></label>
+                <label class="banner_right_but" for="ban3"><i class="fa-solid fa-chevron-right"></i></label>
+            </li>
+            <li>
+                <div><img src="./banner/banner3.jpg" alt="비주얼배너3"></div>
+                <label class="banner_left_but" for="ban2"><i class="fa-solid fa-chevron-left"></i></label>
+                <label class="banner_right_but" for="ban4"><i class="fa-solid fa-chevron-right"></i></label>
+            </li>
+            <li>
+                <div><img src="./banner/banner4.jpg" alt="비주얼배너4"></div>
+                <label class="banner_left_but" for="ban3"><i class="fa-solid fa-chevron-left"></i></label>
+                <label class="banner_right_but" for="ban1"><i class="fa-solid fa-chevron-right"></i></label>
+            </li>
+        </ul>
+    </div> -->
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./banner/banner1.jpg" alt="비주얼배너1"></div>
+            <div class="swiper-slide"><img src="./banner/banner2.jpg" alt="비주얼배너2"></div>
+            <div class="swiper-slide"><img src="./banner/banner3.jpg" alt="비주얼배너3"></div>
+            <div class="swiper-slide"><img src="./banner/banner4.jpg" alt="비주얼배너4"></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="wrap">
+
+        <section class="week_section">
+
+            <input type="radio" name="week" id="week_but_right" checked>
+            <input type="radio" name="week" id="week_but_left">
+
+            <label for="week_but_left"><i class="fa-solid fa-angle-right wb_right"></i></label>
+            <label for="week_but_right"><i class="fa-solid fa-angle-left wb_left"></i></label>
+
+            <div class="week_item">
+                <p class="title_txt">#이주의 신상품</p>
+                <ul>
+                    <li>
+                        <div><img src="./shose/main_shose/s1.png" alt="메인슈즈1"></div>
+                        <p class="week_name">아식스 슈타트</p>
+                        <p class="week_price">109,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s2.png" alt="메인슈즈2"></div>
+                        <p class="week_name">아식스 서브존</p>
+                        <p class="week_price">99,000원</p>
+                    </li>
+                    <li><img src="./shose/main_shose/s3.jpg" alt="메인슈즈3">
+                        <p class="week_name">스케쳐스 우노</p>
+                        <p class="week_price">119,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s4.jpg" alt="메인슈즈4"></div>
+                        <p class="week_name">스케쳐스 베이퍼 폼</p>
+                        <p class="week_price">99,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s5.jpg" alt="메인슈즈5"></div>
+                        <p class="week_name">아식스 GT-2160</p>
+                        <p class="week_price">139,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s6.jpg" alt="메인슈즈6"></div>
+                        <p class="week_name">스케쳐스 엘리베이트</p>
+                        <p class="week_price">119,000원</p>
+                    </li>
+
+                    <li>
+                        <div><img src="./shose/main_shose/s7.png" alt="메인슈즈7"></div>
+                        <p class="week_name">아식스 조그 100S</p>
+                        <p class="week_price">79,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s8.jpg" alt="메인슈즈8"></div>
+                        <p class="week_name">프레드 페리 B722</p>
+                        <p class="week_price">131,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s9.jpg" alt="메인슈즈9"></div>
+                        <p class="week_name">휠라 디사이퍼</p>
+                        <p class="week_price">79,900원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s10.jpg" alt="메인슈즈10"></div>
+                        <p class="week_name">휠라 휠라레인저</p>
+                        <p class="week_price">39,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s11.jpg" alt="메인슈즈11"></div>
+                        <p class="week_name">휠라 RGB플로우</p>
+                        <p class="week_price">62,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s12.jpg" alt="메인슈즈12"></div>
+                        <p class="week_name">프레드 페리 언더스핀</p>
+                        <p class="week_price">89,000원</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="week_section">
+
+            <input type="radio" name="week2" id="week_but_right2" checked>
+            <input type="radio" name="week2" id="week_but_left2">
+
+            <label for="week_but_left2"><i class="fa-solid fa-angle-right wb_right2"></i></label>
+            <label for="week_but_right2"><i class="fa-solid fa-angle-left wb_left2"></i></label>
+
+            <div class="week_item">
+                <p class="title_txt">#이주의 BEST</p>
+                <ul>
+                    <li>
+                        <div><img src="./shose/main_shose/s7.png" alt="메인슈즈7"></div>
+                        <p class="week_name">아식스 조그 100S</p>
+                        <p class="week_price">79,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s8.jpg" alt="메인슈즈8"></div>
+                        <p class="week_name">프레드 페리 B722</p>
+                        <p class="week_price">131,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s9.jpg" alt="메인슈즈9"></div>
+                        <p class="week_name">휠라 디사이퍼</p>
+                        <p class="week_price">79,900원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s10.jpg" alt="메인슈즈10"></div>
+                        <p class="week_name">휠라 휠라레인저</p>
+                        <p class="week_price">39,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s11.jpg" alt="메인슈즈11"></div>
+                        <p class="week_name">휠라 RGB플로우</p>
+                        <p class="week_price">62,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s12.jpg" alt="메인슈즈12"></div>
+                        <p class="week_name">프레드 페리 언더스핀</p>
+                        <p class="week_price">89,000원</p>
+                    </li>
+
+                    <li>
+                        <div><img src="./shose/main_shose/s1.png" alt="메인슈즈1"></div>
+                        <p class="week_name">아식스 슈타트</p>
+                        <p class="week_price">109,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s2.png" alt="메인슈즈2"></div>
+                        <p class="week_name">아식스 서브존</p>
+                        <p class="week_price">99,000원</p>
+                    </li>
+                    <li><img src="./shose/main_shose/s3.jpg" alt="메인슈즈3">
+                        <p class="week_name">스케쳐스 우노</p>
+                        <p class="week_price">119,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s4.jpg" alt="메인슈즈4"></div>
+                        <p class="week_name">스케쳐스 베이퍼 폼</p>
+                        <p class="week_price">99,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s5.jpg" alt="메인슈즈5"></div>
+                        <p class="week_name">아식스 GT-2160</p>
+                        <p class="week_price">139,000원</p>
+                    </li>
+                    <li>
+                        <div><img src="./shose/main_shose/s6.jpg" alt="메인슈즈6"></div>
+                        <p class="week_name">스케쳐스 엘리베이트</p>
+                        <p class="week_price">119,000원</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="bottom_banner">
+            <div><img src="./banner/bottom_banner.png" alt="쿠폰배너"></div>
+
+            <div class="coupon_shose">
+                <div class="coupon_shose_img_box">
+                    <div class="coupon_shose_img"><img src="./shose/main_shose_coupon/1.jpeg" alt="샌들1"></div>
+                    <p class="coupon_shose_title">LAVIN</p>
+                    <div class="coupon_shose_box">
+                        <p class="coupon_shose_price"><s>49,000</s></p>
+                        <p>39,200</p>
+                    </div>
+                </div>
+                <div class="coupon_shose_img_box">
+                    <div class="coupon_shose_img"><img src="./shose/main_shose_coupon/2.jpeg" alt="샌들2"></div>
+                    <p class="coupon_shose_title">NEWPORT H2</p>
+                    <div class="coupon_shose_box">
+                        <p class="coupon_shose_price"><s>99,000</s></p>
+                        <p>49,000</p>
+                    </div>
+                </div>
+                <div class="coupon_shose_img_box">
+                    <div class="coupon_shose_img"><img src="./shose/main_shose_coupon/3.jpeg" alt="샌들3"></div>
+                    <p class="coupon_shose_title">CLASSIC DENIM CLOG</p>
+                    <div class="coupon_shose_box">
+                        <p class="coupon_shose_price"><s>129,000</s></p>
+                        <p>99,000</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="coupon">
+            <div class="coupon_img">
+                <div><img src="./coupon/c1.jpg" alt="쿠폰1"></div>
+                <div class="coupon_txt">
+                    <p class="coupon_title">라코스테</p>
+                    <p class="coupon_title">안유진과 아이코닉한 만남</p>
+                    <p class="coupon_sub_txt">지금 신기 좋은 클래식 스니커즈</p>
+                </div>
+            </div>
+            <div class="coupon_img">
+                <div><img src="./coupon/c2.jpg" alt="쿠폰1"></div>
+                <div class="coupon_txt">
+                    <p class="coupon_title">NEW FINDER</p>
+                    <p class="coupon_title">휠라 #발레코어</p>
+                    <p class="coupon_sub_txt">휠라 신상 슈즈로 매일을 더 사랑스럽게</p>
+                </div>
+            </div>
+            <div class="coupon_img">
+                <div><img src="./coupon/c3.jpg" alt="쿠폰1"></div>
+                <div class="coupon_txt">
+                    <p class="coupon_title">지금 꼭 필요한 스니커즈</p>
+                    <p class="coupon_title">아식스 스니커즈</p>
+                    <p class="coupon_sub_txt">MUST-HAVE #ASICE</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="metaphor">
+            <div class="metaphor_box">
+                <div><img src="./metaphor/new.png" alt="메타포1"></div>
+                <p class="metaphor_p">NEW</p>
+            </div>
+            <div class="metaphor_box">
+                <div><img src="./metaphor/best.png" alt="메타포2"></div>
+                <p class="metaphor_p">BEST</p>
+            </div>
+            <div class="metaphor_box">
+                <div><img src="./metaphor/mdpick.png" alt="메타포3"></div>
+                <p class="metaphor_p">MD-PICK</p>
+            </div>
+            <div class="metaphor_box">
+                <div><img src="./metaphor/sale.png" alt="메타포4"></div>
+                <p class="metaphor_p">SALE</p>
+            </div>
+            <div class="metaphor_box">
+                <div><img src="./metaphor/coupon.png" alt="메타포5"></div>
+                <p class="metaphor_p">COUPON</p>
+            </div>
+            <div class="metaphor_box">
+                <div><img src="./metaphor/more.png" alt="메타포6"></div>
+                <p class="metaphor_p" style="color: #0471FF;">#MoreS</p>
+            </div>
+        </section>
+
+        <section class="off_banner">
+
+            <div><img src="./coupon/c7.jpg" alt="off배너"></div>
+            <div class="off_flex">
+            <div class="off_img">
+                <div class="off_img_oh"><img src="./shose/main_shose/o1.jpg" alt="off신발1"></div>
+                <p class="off_pro">ALDER</p>
+                <div class="off_floatBox">
+                <span class="off_grayFont"><del>109,000원</del></span>
+                <span class="off_redFont">43,600원</span>
+                </div>
+            </div>
+            <div class="off_img">
+                <div class="off_img_oh"><img src="./shose/main_shose/o2.jpg" alt="off신발2"></div>
+                <p class="off_pro">ALDER</p>
+                <div class="off_floatBox">
+                <span class="off_grayFont"><del>109,000원</del></span>
+                <span class="off_redFont">43,600원</span>
+                </div>
+            </div>
+            <div class="off_img">
+                <div class="off_img_oh"><img src="./shose/main_shose/o3.jpg" alt="off신발3"></div>
+                <p class="off_pro">ALDER</p>
+                <div class="off_floatBox">
+                <span class="off_grayFont"><del>109,000원</del></span>
+                <span class="off_redFont">43,600원</span>
+                </div>
+            </div>
+            <div class="off_img">
+                <div class="off_img_oh"><img src="./shose/main_shose/o4.jpg" alt="off신발1"></div>
+                <p class="off_pro">MARY</p>
+                <div class="off_floatBox">
+                <span class="off_grayFont"><del>54,000원</del></span>
+                <span class="off_redFont">21,600원</span>
+                </div>
+            </div>
+            <div class="off_img">
+                <div class="off_img_oh"><img src="./shose/main_shose/o5.jpg" alt="off신발2"></div>
+                <p class="off_pro">MARY</p>
+                <div class="off_floatBox">
+                <span class="off_grayFont"><del>54,000원</del></span>
+                <span class="off_redFont">21,600원</span>
+                </div>
+            </div>
+            <div class="off_img">
+                <div class="off_img_oh"><img src="./shose/main_shose/o6.jpg" alt="off신발3"></div>
+                <p class="off_pro">MARY</p>
+                <div class="off_floatBox">
+                <span class="off_grayFont"><del>54,000원</del></span>
+                <span class="off_redFont">21,600원</span>
+                </div>
+            </div>
+            </div>
+
+        </section>
+
+        <section class="more_box">
+            <p class="title_txt" style="border: none; margin-bottom: 10px;">#More Shose</p>
+            <div class="more_shose">
+                <div><img src="./more/m5.gif" alt="움짤5">
+                    <p class="more_txt">#레트로 스니커즈 끝판왕</p>
+                </div>
+                <div><img src="./more/m1.gif" alt="움짤1">
+                    <p class="more_txt">#산뜻한 스니커즈</p>
+                </div>
+                <div><img src="./more/m2.gif" alt="움짤2">
+                    <p class="more_txt">#쿠션감 최고</p>
+                </div>
+                <div><img src="./more/m6.gif" alt="움짤6">
+                    <p class="more_txt">#부모님 신발 고민 끝</p>
+                </div>
+                <div><img src="./more/m3.gif" alt="움짤3">
+                    <p class="more_txt">#이번 여름을 책임질게</p>
+                </div>
+                <div><img src="./more/m4.gif" alt="움짤4">
+                    <p class="more_txt">#봄나들이 갈래</p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer_wing">
+                <div class="footer_top_box">
+                    <ul class="footer_top_left">
+                        <li class="footer_txt_bold">통합고객센터</li>
+                        <li>1588-9000</li>
+                        <li>월~금 09:00 ~ 12:00 / 13:00 ~ 18:00 (공휴일 휴무)</li>
+                    </ul>
+                    <ul class="footer_top_right">
+                        <li class="footer_txt_bold">NOTICE</li>
+                        <li class="footer_txt_bold">개인정보처리방침 개정안</li>
+                        <li class="footer_txt_bold" style="margin-right: 0;">
+                            <select class="footer_select_box">
+                                <option>FAMILY SITE</option>
+                                <option>FAMILY SITE</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="footer_bottom_left">
+                    <div class="footer_logo"><img src="./logo/logo.png" alt="하단로고"></div>
+                    <p class="footer_bottom_txt">(주)모어슈즈 코리아 대표이사 : 최봉규ㅣ주소 : 서울특별시 중구 을지로 100, B동 21층 (을지로 2가, 파인에비뉴)
+                    </p>
+                    <P class="footer_bottom_txt">개인정보보호 사업자등록번호 : 222-88-77777ㅣ통신판매업신고 : 제 2000-서울중구-1000호</P>
+                    <p class="footer_bottom_txt">개인정보보호 책임자 : 최봉규ㅣ이메일 : moreshose@moreshose.com</p>
+                </div>
+                <div class="footer_bottom_right">
+            <ul>
+                <li>HELP</li>
+                <li>고객센터</li>
+                <li>매장찾기</li>
+                <li>입점/제휴 문의</li>
+                <li>단체구매 문의</li>
+                <li>기프트카드 안내</li>
+            </ul>
+            <ul>
+                <li>BRAND</li>
+                <li>HAWKINS</li>
+                <li>DANNER</li>
+                <li>NUOVO</li>
+                <li>SAUCONU</li>
+            </ul>
+            <ul>
+                <li>SOCIAL</li>
+                <li class=" footer_social_txt"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="footer_social_txt"><i class="fa-brands fa-facebook-f"></i></li>
+                    <li class="footer_social_txt"><i class="fa-brands fa-youtube"></i></i></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <input type="checkbox" id="wing_btn">
+        
+        <aside class="wing_banner">
+            <div class="wing_flex">
+                <label for="wing_btn" class="open_btn"><i class="fa-solid fa-bars"></i></label>
+                <!-- <label for="wing_btn" class="close_btn"><i class="fa-solid fa-caret-right"></i></label> -->
+                <ul class="wing_list">
+                    <li class="wing_height">FILTER</li>
+                    <li class="wing_size wing_height">사이즈</li>
+                    <li class="wing_size_hidden">
+                        <button class="wing_size_hidden_btn on_size">250</button>
+                        <button class="wing_size_hidden_btn">255</button>
+                        <button class="wing_size_hidden_btn">260</button>
+                        <button class="wing_size_hidden_btn">265</button>
+                        <button class="wing_size_hidden_btn">270</button>
+                        <button class="wing_size_hidden_btn">275</button>
+                        <button class="wing_size_hidden_btn">280</button>
+                        <button class="wing_size_hidden_btn">285</button>
+                        <button class="wing_size_hidden_btn">290</button>
+                    </li>
+                    <li class="wing_color wing_height">색상</li>
+                    <li class="wing_color_hidden">
+                        <button class="on_color wing_color_hidden_btn" style="background-color: #ccc;"></button>
+                        <button class="wing_color_hidden_btn" style="background-color: beige;"></button>
+                        <button class="wing_color_hidden_btn" style="background-color: black;"></button>
+                        <button class="wing_color_hidden_btn" style="background-color: white;"></button>
+                    </li>
+                    <li class="wing_search wing_height">검색어</li>
+                    <li class="wing_search_hidden"><input type="search" placeholder="검색어 입력"></li>
+                </ul>
+            </div>
+            <div class="wing_searchBar">검색하기</div>
+        </aside>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoreShose</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!--jQuery-->
+    <script src="./login.js" defer></script>
+    <script src="./banner.js" defer></script>
+    <!--js-->
+    <link rel="icon" href="./logo/logo2.png">
+    <!--favicon-->
+    <link rel="stylesheet" href="./login.css">
+    <!--css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--font awesome-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=42dot+Sans:wght@300..800&display=swap" rel="stylesheet">
+    <!--google font-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!--swiper-->
+
+</head>
+<body>
+
+        <header class="header">
+        <div class="header_content">
+            <div class="logo"><a href="./index.html"><img src="./logo/logo.png" alt="로고"></a></div>
+            <div class="search"><input class="search_box" type="search" placeholder="브랜드를 검색해 보세요!">
+                <button class="search_but"><i class="fa-solid fa-magnifying-glass popularity_con1"></i></button>
+                <div class="popularity">
+                    <h3 class="popularity_con1">인기 검색어</h3>
+                    <p class="popularity_txt popularity_con1" style="color: black;"><span style="color: red;">01
+                        </span>나이키<i class="popularity_con2 fa-solid fa-caret-up" style="color: red;"></i></p>
+                    <p class="popularity_txt popularity_con1">02 아디다스<i
+                            class="popularity_con2 fa-solid fa-caret-up"></i></p>
+                    <p class="popularity_txt popularity_con1">03 뉴발란스<i
+                            class="popularity_con2 fa-solid fa-caret-up"></i></p>
+                    <p class="popularity_txt popularity_con1">04 크록스<i class="popularity_con2 fa-solid fa-caret-up"></i>
+                    </p>
+                    <p class="popularity_txt popularity_con1">05 휠라<i class="popularity_con2 fa-solid fa-caret-up"></i>
+                    </p>
+                </div>
+            </div>
+
+            <nav class="header_nav_top">
+                <ul>
+                    <li><a href="./login.html">로그인</a></li>
+                    <li><a href="./join.html">회원가입</a></li>
+                    <li><a href="#!">마이페이지</a></li>
+                    <li><a href="#!">장바구니</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <nav class="header_nav_bottom">
+            <ul class="header_nav_bottom_brand">
+                <li class="brand"><a href="#!">브랜드</a>
+                    <ul>
+                        <li><a href="#!" class="brand_color">A</a></li>
+                        <li><a href="#!">아디다스</a></li>
+                        <li><a href="#!">아키클래식</a></li>
+                        <li><a href="#!">앨빈클로</a></li>
+                        <li><a href="#!">아날로그무드</a></li>
+                        <li><a href="#!">아르에르</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!" class="brand_color">B</a></li>
+                        <li><a href="#!">베이비잼</a></li>
+                        <li><a href="#!">바켄</a></li>
+                        <li><a href="#!">밸롭</a></li>
+                        <li><a href="#!">벤시몽</a></li>
+                        <li><a href="#!">봉봉프렌즈</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!" class="brand_color">C</a></li>
+                        <li><a href="#!">캘빈클라인진</a></li>
+                        <li><a href="#!">카고브로스</a></li>
+                        <li><a href="#!">캐스키드슨</a></li>
+                        <li><a href="#!">클레용</a></li>
+                        <li><a href="#!">크럼프</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!" class="brand_color">D</a></li>
+                        <li><a href="#!">드라반</a></li>
+                        <li><a href="#!">대너</a></li>
+                        <li><a href="#!">다이노솔즈</a></li>
+                        <li><a href="#!">닥터마틴</a></li>
+                        <li></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!" class="brand_color">E</a></li>
+                        <li><a href="#!">어프어프</a></li>
+                        <li><a href="#!">펠로우</a></li>
+                        <li><a href="#!">아이더 세이프티</a></li>
+                        <li><a href="#!">엘두</a></li>
+                        <li><a href="#!">이머전시</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#!" class="brand_color">F</a></li>
+                        <li><a href="#!">페이유에</a></li>
+                        <li><a href="#!">휠라</a></li>
+                        <li><a href="#!">파인드칠린</a></li>
+                        <li><a href="#!">프레드 페리</a></li>
+                        <li><a href="#!">포머티브</a></li>
+                    </ul>
+                </li>
+                <li class="header_nav_bottom_oder"><a href="#!" style="color: red;">스니커즈</a>
+                    <ul>
+                        <li><a href="./product_page.html" style="color: red;">스니커즈</a></li>
+                        <li><a href="#!">캔버스화</a></li>
+                        <li><a href="#!">슬립온</a></li>
+                        <li><a href="#!">뮬</a></li>
+                        <li><a href="#!">기타</a></li>
+                        <li><a href="#!">워크화</a></li>
+                    </ul>
+                </li>
+                <li class="header_nav_bottom_oder"><a href="#!">운동화</a>
+                    <ul>
+                        <li><a href="#!">운동화</a></li>
+                        <li><a href="#!">런닝화</a></li>
+                        <li><a href="#!">농구화</a></li>
+                        <li><a href="#!">등산화</a></li>
+                        <li><a href="#!">축구화</a></li>
+                        <li><a href="#!">배트민턴화</a></li>
+                        <li><a href="#!">테니스화</a></li>
+                        <li><a href="#!">워킹화</a></li>
+                    </ul>
+                </li>
+                <li class="header_nav_bottom_oder"><a href="#!">구두</a>
+                    <ul>
+                        <li><a href="#!">구두</a></li>
+                        <li><a href="#!">로퍼</a></li>
+                        <li><a href="#!">레이스업</a></li>
+                        <li><a href="#!">힐/펌프스</a></li>
+                        <li><a href="#!">뮬/블로퍼</a></li>
+                        <li><a href="#!">플랫</a></li>
+                    </ul>
+                </li>
+                <li class="header_nav_bottom_oder"><a href="#!">부츠</a>
+                    <ul>
+                        <li><a href="#!">부츠</a></li>
+                        <li><a href="#!">워크부츠</a></li>
+                        <li><a href="#!">털부츠</a></li>
+                        <li><a href="#!">패딩부츠</a></li>
+                        <li><a href="#!">앵클부츠</a></li>
+                        <li><a href="#!">미들부츠</a></li>
+                    </ul>
+                </li>
+                <li class="header_nav_bottom_oder"><a href="#!">샌들/슬리퍼</a>
+                    <ul>
+                        <li><a href="#!">샌들/슬리퍼</a></li>
+                        <li><a href="#!">슬라이드</a></li>
+                        <li><a href="#!">아쿠아슈즈</a></li>
+                        <li><a href="#!">스포츠샌들</a></li>
+                        <li><a href="#!">코르크샌들</a></li>
+                        <li><a href="#!">플립플랍</a></li>
+                        <li><a href="#!">레더샌들</a></li>
+                        <li><a href="#!">캐주얼샌들</a></li>
+                        <li><a href="#!">윈터샌들</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+<h2 class="login_title">로그인</h2>
+<form class="login_box">
+
+    <div class="login_flex">
+        <p>로그인</p>
+    </div>
+    <div class="login_txt">
+        <div><i class="fa-solid fa-user"></i><input id="user_id" type="text" placeholder="아이디를 입력해 주세요." autofocus required></div>
+        <hr>
+        <div>
+            <i class="fa-solid fa-lock"></i><input id="user_pw" type="password" placeholder="비밀번호를 입력해 주세요." required>
+            <i class="fa-solid fa-eye-slash visible_icon"></i>
+        </div>
+        <hr>
+        <p class="hidden_txt_1">아이디와 비밀번호를 확인하세요.</p>
+        <p class="hidden_txt_2">아이디와 비밀번호가 5회이상 틀렸습니다.</p>
+    </div>
+    <div class="logo_cen"><img src="./logo/logo.png" alt="로고"></div>
+    <button type="submit" class="login_btn">로그인</button>
+
+</form>
+
+<div class="login_bottom">
+    <p class="id_search">아이디 찾기</p>
+    <p>&nbsp;·&nbsp;</p>
+    <p class="pw_search">비밀번호 찾기</p>
+    <p>&nbsp;·&nbsp;</p>
+    <p><a href="./join.html" style="text-decoration: none;">회원가입</a></p>
+</div>
+
+<form class="modal_id">
+    <div class="modal_box">
+        <div class="modal_spanBox">
+            <span>아이디 찾기</span>
+            <span class="x_btn_id">X</span>
+        </div>
+        <hr noshade class="hr">
+        <div class="modal_txtBox">
+            <div class="txt_box">
+                <div style="width: 60px;">이 름</div><input class="txt_name" type="text" placeholder="이름을 입력하세요." style="border: none;" size="25px" autofocus required>
+            </div>
+            <p class="modal_smallTxt_name">존재하지 않는 이름 입니다.</p>
+            <div class="txt_box">
+                <div style="width: 60px;">이메일</div><input class="txt_email" type="text" placeholder="이메일을 입력하세요." style="border: none;" size="25px" required>
+            </div>
+            <p class="modal_smallTxt_email">존재하지 않는 이메일 입니다.</p>
+        </div>
+        <button type="submit" class="modal_btn_id">찾기</button>
+    </div>
+</form>
+
+<form class="modal_pw">
+    <div class="modal_box">
+        <div class="modal_spanBox">
+            <span>비밀번호 찾기</span>
+            <span class="x_btn_pw">X</span>
+        </div>
+        <hr noshade class="hr">
+        <div class="modal_txtBox">
+            <div class="txt_box">
+                <div style="width: 60px;">아이디</div><input class="txt_id" type="text" placeholder="이름을 입력하세요." style="border: none;" size="25px" autofocus required>
+            </div>
+            <p class="modal_smallTxt_id">존재하지 않는 아이디 입니다.</p>
+            <div class="txt_box">
+                <div style="width: 60px;">이메일</div><input class="txt_email_2" type="text" placeholder="이메일을 입력하세요." style="border: none;" size="25px" required>
+            </div>
+            <p class="modal_smallTxt_email_2">이메일을 확인하세요.</p>
+        </div>
+        <button type="submit" class="modal_btn_pw">찾기</button>
+    </div>
+</form>
+
+    <footer class="footer">
+        <div class="footer_wing">
+            <div class="footer_top_box">
+                <ul class="footer_top_left">
+                    <li class="footer_txt_bold">통합고객센터</li>
+                    <li>1588-9000</li>
+                    <li>월~금 09:00 ~ 12:00 / 13:00 ~ 18:00 (공휴일 휴무)</li>
+                </ul>
+                <ul class="footer_top_right">
+                    <li class="footer_txt_bold">NOTICE</li>
+                    <li class="footer_txt_bold">개인정보처리방침 개정안</li>
+                    <li class="footer_txt_bold" style="margin-right: 0;">
+                        <select class="footer_select_box">
+                            <option>FAMILY SITE</option>
+                            <option>FAMILY SITE</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer_bottom">
+            <div class="footer_bottom_left">
+                <div class="footer_logo"><img src="./logo/logo.png" alt="하단로고"></div>
+                <p class="footer_bottom_txt">(주)모어슈즈 코리아 대표이사 : 최봉규ㅣ주소 : 서울특별시 중구 을지로 100, B동 21층 (을지로 2가, 파인에비뉴)
+                </p>
+                <P class="footer_bottom_txt">개인정보보호 사업자등록번호 : 222-88-77777ㅣ통신판매업신고 : 제 2000-서울중구-1000호</P>
+                <p class="footer_bottom_txt">개인정보보호 책임자 : 최봉규ㅣ이메일 : moreshose@moreshose.com</p>
+            </div>
+            <div class="footer_bottom_right">
+                <ul>
+                    <li>HELP</li>
+                    <li>고객센터</li>
+                    <li>매장찾기</li>
+                    <li>입점/제휴 문의</li>
+                    <li>단체구매 문의</li>
+                    <li>기프트카드 안내</li>
+                </ul>
+                <ul>
+                    <li>BRAND</li>
+                    <li>HAWKINS</li>
+                    <li>DANNER</li>
+                    <li>NUOVO</li>
+                    <li>SAUCONU</li>
+                </ul>
+                <ul>
+                    <li>SOCIAL</li>
+                    <li class=" footer_social_txt"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="footer_social_txt"><i class="fa-brands fa-facebook-f"></i></li>
+                    <li class="footer_social_txt"><i class="fa-brands fa-youtube"></i></i></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <input type="checkbox" id="wing_btn">
+
+    <aside class="wing_banner">
+        <div class="wing_flex">
+            <label for="wing_btn" class="open_btn"><i class="fa-solid fa-bars"></i></label>
+            <!-- <label for="wing_btn" class="close_btn"><i class="fa-solid fa-caret-right"></i></label> -->
+            <ul class="wing_list">
+                <li class="wing_height">FILTER</li>
+                <li class="wing_size wing_height">사이즈</li>
+                <li class="wing_size_hidden">
+                    <button class="wing_size_hidden_btn on_size">250</button>
+                    <button class="wing_size_hidden_btn">255</button>
+                    <button class="wing_size_hidden_btn">260</button>
+                    <button class="wing_size_hidden_btn">265</button>
+                    <button class="wing_size_hidden_btn">270</button>
+                    <button class="wing_size_hidden_btn">275</button>
+                    <button class="wing_size_hidden_btn">280</button>
+                    <button class="wing_size_hidden_btn">285</button>
+                    <button class="wing_size_hidden_btn">290</button>
+                </li>
+                <li class="wing_color wing_height">색상</li>
+                <li class="wing_color_hidden">
+                    <button class="on_color wing_color_hidden_btn" style="background-color: #ccc;"></button>
+                    <button class="wing_color_hidden_btn" style="background-color: beige;"></button>
+                    <button class="wing_color_hidden_btn" style="background-color: black;"></button>
+                    <button class="wing_color_hidden_btn" style="background-color: white;"></button>
+                </li>
+                <li class="wing_search wing_height">검색어</li>
+                <li class="wing_search_hidden"><input type="search" placeholder="검색어 입력"></li>
+            </ul>
+        </div>
+        <div class="wing_searchBar">검색하기</div>
+    </aside>
+    </div>
+
+</body>
+</html>
