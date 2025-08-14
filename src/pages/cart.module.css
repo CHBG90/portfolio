@@ -1,0 +1,35 @@
+.img {
+    width: 150px;
+    height: 100px;
+}
+.row {
+    margin-top: 50px;
+    font-weight: bold;
+}
+.col {
+    text-align: center;
+}
+.col_2 {
+    text-align: center;
+    line-height: 100px;
+}
+.hr {
+    margin: 20px 0;
+}
+.p {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin: 150px 0;
+}
+.but {
+    border: none;
+    background-color: #ccc;
+    height: 30px;
+    line-height: 30px;
+    margin-right: 20px;
+}
+.total {
+    float: right;
+    font-size: 24px;
+}
