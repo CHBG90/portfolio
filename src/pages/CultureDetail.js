@@ -43,7 +43,7 @@ const Link_top = styled(Link)`
   `
 const Icon = styled(FontAwesomeIcon)`
     font-size: 24px;
-    margin: 20px 10px 0;
+     margin-right: 10px;
   `
 const Span = styled.span`
     color: #ccc;
@@ -56,12 +56,15 @@ const Img = styled.img`
     width: 285px;
     height: 250px;
   `
-const Icon_margin = styled.div`
-    margin-bottom: 40px;
-  `
 const Txt_p = styled.p`
     margin-top: 15px;
     line-height: 1.5;
+`
+const Icon_div = styled.p`
+    display: flex;
+`
+const Icon_box = styled.div`
+    margin-top: 40px;
 `
 
 export default function CultureDetail() {
@@ -81,7 +84,7 @@ export default function CultureDetail() {
       <h2>{detail.title}</h2>
       <Flex>
         <P_1>축제 진행 중</P_1>
-        <Button_1 onClick={() => {dispatch(addItem({ image: detail.image, id: detail.id, title: detail.title, price: detail.price, count: 1 })); alert('장바구니에 추가되었습니다.');}}>티켓구매</Button_1>
+        <Button_1 onClick={() => { dispatch(addItem({ image: detail.image, id: detail.id, title: detail.title, price: detail.price, count: 1 })); alert('장바구니에 추가되었습니다.'); }}>티켓구매</Button_1>
       </Flex>
       <Flex>
         <Img src={detail.subImg1}></Img>
@@ -90,13 +93,13 @@ export default function CultureDetail() {
       </Flex>
       <Txt_p>{detail.desc}</Txt_p>
       <hr></hr>
-      <div>
-        <div><Icon icon={faCalendar} />{detail.date}</div>
-        <div><Icon icon={faLocationDot} />{detail.addr}</div>
-        <div><Icon icon={faCoins} />{detail.price.toLocaleString() + '원'}</div>
-        <div><Icon icon={faPhone} />{detail.tel}</div>
-        <Icon_margin><Icon icon={faSquareInstagram} />{detail.sns}</Icon_margin>
-      </div>
+      <Icon_box>
+        <Icon_div><Icon icon={faCalendar} /><p>{detail.date}</p></Icon_div>
+        <Icon_div><Icon icon={faLocationDot} /><p>{detail.addr}</p></Icon_div>
+        <Icon_div><Icon icon={faCoins} /><p>{detail.price.toLocaleString() + '원'}</p></Icon_div>
+        <Icon_div><Icon icon={faPhone} /><p>{detail.tel}</p></Icon_div>
+        <Icon_div><Icon icon={faSquareInstagram} />{detail.sns}</Icon_div>
+      </Icon_box>
     </Wrap>
   )
 }

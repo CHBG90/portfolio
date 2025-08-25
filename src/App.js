@@ -28,7 +28,6 @@ function App() {
       <Route path='cultureDetail/:id' element={<CultureDetail/>}></Route>
       <Route path='healingDetail/:id' element={<HealingDetail/>}></Route>
       <Route path='eventDetail/:id' element={<EventDetail/>}></Route>
-
     </Routes>
 
     <Footer></Footer>

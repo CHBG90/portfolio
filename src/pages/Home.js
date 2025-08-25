@@ -66,7 +66,7 @@ export default function Home() {
         <Gnb>
           <StyledLink to='/'>홈</StyledLink>
           <StyledLink to='cult'>문화관광축제</StyledLink>
-          <StyledLink to='cart'>티켓구매</StyledLink>
+          <StyledLink to='cart'>장바구니</StyledLink>
         </Gnb>
         <Outlet></Outlet>
         {isHome && (
